@@ -38,7 +38,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #14b8a6; /* Teal-600 */
+  background-color: #14b8a6; 
   color: #fff;
   border-radius: 9999px;
   box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4);
