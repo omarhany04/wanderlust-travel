@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DestinationCard = ({ 
   name, 
@@ -12,8 +13,9 @@ const DestinationCard = ({
   isHidden = false 
 }) => {
   return (
-    <div 
-      className={`destination-card rounded-xl overflow-hidden shadow-lg group scale-up ${isHidden ? 'hidden' : ''}`} 
+    <Link 
+      to={`/destination/${name}`}
+      className={`block destination-card rounded-xl overflow-hidden shadow-lg group scale-up ${isHidden ? 'hidden' : ''}`} 
       data-name={name.toLowerCase()}
     >
       <div className="relative h-64">
@@ -45,7 +47,7 @@ const DestinationCard = ({
           <i className="fas fa-map-marked-alt mr-1"></i> Top Pick
         </span>
       </div>
-    </div>
+    </Link>
   );
 };
 

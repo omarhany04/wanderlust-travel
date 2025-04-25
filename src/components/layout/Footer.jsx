@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-6 px-4">
+    <footer className="bg-gray-900 text-white pt-16 pb-6 px-4" id="footer">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company info */}
@@ -33,27 +33,27 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Destinations</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/destination/bali" className="text-gray-400 hover:text-white transition">
                   Bali, Indonesia
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/destination/santorini" className="text-gray-400 hover:text-white transition">
                   Santorini, Greece
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/destination/kyoto" className="text-gray-400 hover:text-white transition">
                   Kyoto, Japan
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/destination/amalfi" className="text-gray-400 hover:text-white transition">
                   Amalfi Coast, Italy
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/destination/machu" className="text-gray-400 hover:text-white transition">
                   Machu Picchu, Peru
                 </Link>
               </li>

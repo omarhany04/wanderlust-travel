@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import DestinationsPage from './pages/DestinationsPage';
+import DestinationDetail from './pages/DestinationDetail';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import './assets/styles/globals.css';
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<DestinationsPage />} />
+          <Route path="/destination/:destinationName" element={<DestinationDetail />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
@@ -23,4 +25,3 @@ function App() {
 }
 
 export default App;
-
