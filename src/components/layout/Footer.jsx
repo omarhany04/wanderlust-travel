@@ -148,26 +148,12 @@ const Footer = () => {
         
         <hr className="border-gray-800 mb-8" />
         
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; 2025 Wanderlust Travel. All rights reserved.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <RouterLink to="/privacy" className="text-gray-500 text-sm hover:text-white transition">
-              Privacy Policy
-            </RouterLink>
-            <RouterLink to="/terms" className="text-gray-500 text-sm hover:text-white transition">
-              Terms of Service
-            </RouterLink>
-            <RouterLink to="/cookies" className="text-gray-500 text-sm hover:text-white transition">
-              Cookie Policy
-            </RouterLink>
-            <RouterLink to="/sitemap" className="text-gray-500 text-sm hover:text-white transition">
-              Sitemap
-            </RouterLink>
-          </div>
-        </div>
+        <div className="flex justify-center items-center">
+        <p className="text-gray-500 text-sm text-center">
+          &copy; 2025 Wanderlust Travel. All rights reserved.
+        </p>
       </div>
+     </div>
     </footer>
   );
 };
