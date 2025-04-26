@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Button from '../common/Button';
 
 const Featured = () => {
   return (
@@ -23,9 +25,11 @@ const Featured = () => {
           
           {/* Featured content */}
           <div className="p-6">
-            <span className="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">
-              Featured
-            </span>
+          <div className="flex items-center justify-center mb-4">
+                  <span className="inline-block bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+                    🌴 Exclusive Experience
+                  </span>
+                </div>
             <h3 className="text-2xl font-bold text-gray-800 mt-4 mb-2">
               Private Island Hopping Tour
             </h3>
@@ -67,9 +71,11 @@ const Featured = () => {
                 <span className="text-3xl font-bold text-gray-800">$299</span>
                 <span className="text-gray-600"> / person</span>
               </div>
-              <span className="inline-block bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-                🌴 Exclusive Experience
-              </span>
+              <Link to="/experiences/island-hopping-tour">
+                <Button variant="primary">
+                  View Details
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
