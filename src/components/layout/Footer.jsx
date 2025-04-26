@@ -13,16 +13,16 @@ const Footer = () => {
               Making travel dreams come true since 2015. Your journey is our passion.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+              <a href="https://www.facebook.com/" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+              <a href="https://x.com/" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+              <a href="https://www.instagram.com/" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+              <a href="https://www.pinterest.com/" className="bg-gray-800 hover:bg-teal-600 w-10 h-10 rounded-full flex items-center justify-center transition" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-pinterest"></i>
               </a>
             </div>
@@ -65,27 +65,27 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Travel Types</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/travel-type/luxury-escapes" className="text-gray-400 hover:text-white transition">
                   Luxury Escapes
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/travel-type/adventure-travel" className="text-gray-400 hover:text-white transition">
                   Adventure Travel
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/travel-type/beach-getaways" className="text-gray-400 hover:text-white transition">
                   Beach Getaways
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/travel-type/cultural-experiences" className="text-gray-400 hover:text-white transition">
                   Cultural Experiences
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-gray-400 hover:text-white transition">
+                <Link to="/travel-type/honeymoon-packages" className="text-gray-400 hover:text-white transition">
                   Honeymoon Packages
                 </Link>
               </li>

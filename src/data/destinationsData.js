@@ -133,6 +133,7 @@ const destinationsData = [
       duration: 8,
       description: "Stunning cliffs, pastel villages, and the sparkling sea await you on Italy's most romantic coastline.",
       image: 'https://i.ibb.co/CK8DybZr/Amalfi-Coast.jpg',
+      initiallyHidden: true,
       longDescription: `
         The Amalfi Coast, a UNESCO World Heritage site, is one of Italy's most spectacular stretches of coastline. This 50-kilometer paradise along the Tyrrhenian Sea features vertiginous cliffs, pastel-colored fishing villages, terraced vineyards, and lemon groves cascading down to crystal-clear waters.
         
@@ -175,6 +176,7 @@ const destinationsData = [
       duration: 10,
       description: 'Journey through the Andes to the Lost City of the Incas with our guided, unforgettable adventure.',
       image: 'https://i.ibb.co/S46DGWWp/Machu-Picchu.jpg',
+      initiallyHidden: true,
       longDescription: `
         Machu Picchu, the ancient Incan citadel set high in the Andes Mountains, is one of the world's most awe-inspiring archaeological sites. Built in the 15th century and later abandoned, this "Lost City of the Incas" remained unknown to the outside world until its rediscovery in 1911.
         
