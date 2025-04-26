@@ -145,21 +145,6 @@ const TravelTypePage = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-teal-600 py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Experience {travelType.title}?</h2>
-          <p className="text-teal-100 text-lg mb-8 max-w-3xl mx-auto">
-            Contact our travel specialists to start planning your personalized journey
-          </p>
-          <Link to="/contact">
-            <Button variant="secondary" size="large">
-              Start Planning
-            </Button>
-          </Link>
-        </div>
-      </div>
-
       {/* Reservation Modal */}
       {selectedDestination && (
         <ReservationModal
