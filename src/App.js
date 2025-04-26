@@ -9,6 +9,7 @@ import TravelExperienceDetail from './pages/TravelExperienceDetail';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import IslandHoppingTourPage from './pages/IslandHoppingTourPage';
+import SearchResultsPage from './pages/SearchResultsPage';
 import './assets/styles/globals.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/experiences/island-hopping-tour" element={<IslandHoppingTourPage />} />
+          <Route path="/search" element={<SearchResultsPage />} />
         </Routes>
       </Layout>
     </Router>

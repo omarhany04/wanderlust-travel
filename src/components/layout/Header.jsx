@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import GlobalSearch from '../common/GlobalSearch';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
@@ -32,6 +34,11 @@ const Header = () => {
   // Close mobile menu when a link is clicked
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+  };
+
+  // Toggle search visibility
+  const toggleSearch = () => {
+    setShowSearch(!showSearch);
   };
 
   // Navigation link renderer - handles both home page scrolling and other page navigation
@@ -83,9 +90,23 @@ const Header = () => {
             <NavLink to="testimonials">Testimonials</NavLink>
             <NavLink to="footer">Travel Types</NavLink>
             <NavLink to="subscribe">Subscribe</NavLink>
+            <button
+              onClick={toggleSearch}
+              className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
+              aria-label={showSearch ? "Close search" : "Open search"}
+            >
+              <i className={`fas ${showSearch ? 'fa-times' : 'fa-search'}`}></i>
+            </button>
           </div>
           
           <div className="md:hidden flex items-center">
+            <button
+              onClick={toggleSearch}
+              className="text-gray-600 hover:text-teal-600 mr-4"
+              aria-label={showSearch ? "Close search" : "Open search"}
+            >
+              <i className={`fas ${showSearch ? 'fa-times' : 'fa-search'}`}></i>
+            </button>
             <button 
               onClick={toggleMobileMenu}
               className="text-gray-600 hover:text-teal-600"
@@ -97,6 +118,15 @@ const Header = () => {
           </div>
         </div>
       </div>
+      
+      {/* Search Bar */}
+      {showSearch && (
+        <div className="bg-white border-t border-gray-200 py-3 px-4 transition-all duration-300 animate-fadeIn">
+          <div className="max-w-4xl mx-auto">
+            <GlobalSearch />
+          </div>
+        </div>
+      )}
       
       {/* Mobile menu */}
       <div className={`md:hidden bg-white ${mobileMenuOpen ? 'block' : 'hidden'}`}>
