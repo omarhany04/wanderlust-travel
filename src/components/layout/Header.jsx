@@ -81,6 +81,7 @@ const Header = () => {
             <NavLink to="destinations">Destinations</NavLink>
             <NavLink to="featured">Featured</NavLink>
             <NavLink to="testimonials">Testimonials</NavLink>
+            <NavLink to="footer">Travel Types</NavLink>
             <NavLink to="subscribe">Subscribe</NavLink>
           </div>
           
@@ -103,6 +104,7 @@ const Header = () => {
           <NavLink to="destinations">Destinations</NavLink>
           <NavLink to="featured">Featured</NavLink>
           <NavLink to="testimonials">Testimonials</NavLink>
+          <NavLink to="travel-types">Travel Types</NavLink>
           <NavLink to="subscribe">Subscribe</NavLink>
         </div>
       </div>
