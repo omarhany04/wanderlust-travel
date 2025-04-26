@@ -3,11 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import Button from '../components/common/Button';
 import Newsletter from '../components/sections/Newsletter';
 import destinationsData from '../data/destinationsData';
+import ReservationModal from '../components/common/ReservationModal';
 
 const DestinationDetail = () => {
   const { destinationName } = useParams();
   const [destination, setDestination] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     // Find the destination that matches the URL parameter
@@ -24,6 +26,14 @@ const DestinationDetail = () => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, [destinationName]);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   if (loading) {
     return (
@@ -171,7 +181,12 @@ const DestinationDetail = () => {
                   </div>
                 </div>
                 
-                <Button variant="primary" fullWidth={true} size="large">
+                <Button 
+                  variant="primary" 
+                  fullWidth={true} 
+                  size="large"
+                  onClick={openModal}
+                >
                   Reserve Now
                 </Button>
                 
@@ -202,6 +217,16 @@ const DestinationDetail = () => {
           </div>
         </div>
       </div>
+      
+      {/* Reservation Modal */}
+      <ReservationModal 
+        isOpen={modalOpen}
+        onClose={closeModal}
+        destinationName={destination?.location}
+        price={destination?.price}
+        duration={destination?.duration}
+        departureDate="June 15, 2025"
+      />
       
       <Newsletter />
     </div>
