@@ -1,7 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Footer = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  
+  // Helper function to create the correct link type based on current page
+  const createSectionLink = (to, children) => {
+    if (isHomePage) {
+      return (
+        <ScrollLink
+          to={to}
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+          className="text-gray-400 hover:text-white transition cursor-pointer"
+        >
+          {children}
+        </ScrollLink>
+      );
+    } else {
+      return (
+        <RouterLink to={`/#${to}`} className="text-gray-400 hover:text-white transition">
+          {children}
+        </RouterLink>
+      );
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-6 px-4" id="footer">
       <div className="max-w-7xl mx-auto">
@@ -33,29 +61,29 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Destinations</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/destination/bali" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/destination/bali" className="text-gray-400 hover:text-white transition">
                   Bali, Indonesia
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/destination/santorini" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/destination/santorini" className="text-gray-400 hover:text-white transition">
                   Santorini, Greece
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/destination/kyoto" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/destination/kyoto" className="text-gray-400 hover:text-white transition">
                   Kyoto, Japan
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/destination/amalfi" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/destination/amalfi" className="text-gray-400 hover:text-white transition">
                   Amalfi Coast, Italy
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/destination/machu" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/destination/machu" className="text-gray-400 hover:text-white transition">
                   Machu Picchu, Peru
-                </Link>
+                </RouterLink>
               </li>
             </ul>
           </div>
@@ -65,29 +93,29 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Travel Types</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/travel-type/luxury-escapes" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/travel-type/luxury-escapes" className="text-gray-400 hover:text-white transition">
                   Luxury Escapes
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/travel-type/adventure-travel" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/travel-type/adventure-travel" className="text-gray-400 hover:text-white transition">
                   Adventure Travel
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/travel-type/beach-getaways" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/travel-type/beach-getaways" className="text-gray-400 hover:text-white transition">
                   Beach Getaways
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/travel-type/cultural-experiences" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/travel-type/cultural-experiences" className="text-gray-400 hover:text-white transition">
                   Cultural Experiences
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/travel-type/honeymoon-packages" className="text-gray-400 hover:text-white transition">
+                <RouterLink to="/travel-type/honeymoon-packages" className="text-gray-400 hover:text-white transition">
                   Honeymoon Packages
-                </Link>
+                </RouterLink>
               </li>
             </ul>
           </div>
@@ -125,18 +153,18 @@ const Footer = () => {
             &copy; 2025 Wanderlust Travel. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/privacy" className="text-gray-500 text-sm hover:text-white transition">
+            <RouterLink to="/privacy" className="text-gray-500 text-sm hover:text-white transition">
               Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-gray-500 text-sm hover:text-white transition">
+            </RouterLink>
+            <RouterLink to="/terms" className="text-gray-500 text-sm hover:text-white transition">
               Terms of Service
-            </Link>
-            <Link to="/cookies" className="text-gray-500 text-sm hover:text-white transition">
+            </RouterLink>
+            <RouterLink to="/cookies" className="text-gray-500 text-sm hover:text-white transition">
               Cookie Policy
-            </Link>
-            <Link to="/sitemap" className="text-gray-500 text-sm hover:text-white transition">
+            </RouterLink>
+            <RouterLink to="/sitemap" className="text-gray-500 text-sm hover:text-white transition">
               Sitemap
-            </Link>
+            </RouterLink>
           </div>
         </div>
       </div>

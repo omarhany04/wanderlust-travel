@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   // Scroll effect for navbar
   useEffect(() => {
@@ -32,6 +34,37 @@ const Header = () => {
     setMobileMenuOpen(false);
   };
 
+  // Navigation link renderer - handles both home page scrolling and other page navigation
+  const NavLink = ({ to, children }) => {
+    if (isHomePage) {
+      // If we're already on home page, use ScrollLink for smooth scrolling
+      return (
+        <ScrollLink 
+          to={to} 
+          spy={true} 
+          smooth={true} 
+          offset={-80} 
+          duration={500}
+          className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
+          onClick={closeMobileMenu}
+        >
+          {children}
+        </ScrollLink>
+      );
+    } else {
+      // If on another page, use RouterLink to go to home page with hash
+      return (
+        <RouterLink 
+          to={`/#${to}`} 
+          className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
+          onClick={closeMobileMenu}
+        >
+          {children}
+        </RouterLink>
+      );
+    }
+  };
+
   return (
     <nav className={`fixed w-full z-50 bg-white bg-opacity-95 transition-all duration-300 ${
       scrolled ? 'shadow-md' : 'shadow-sm'
@@ -45,46 +78,10 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <ScrollLink 
-              to="destinations" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500}
-              className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
-            >
-              Destinations
-            </ScrollLink>
-            <ScrollLink 
-              to="featured" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500}
-              className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
-            >
-              Featured
-            </ScrollLink>
-            <ScrollLink 
-              to="testimonials" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500}
-              className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
-            >
-              Testimonials
-            </ScrollLink>
-            <ScrollLink 
-              to="subscribe" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500}
-              className="nav-link px-4 py-2 text-teal-600 font-medium cursor-pointer"
-            >
-              Subscribe
-            </ScrollLink>
+            <NavLink to="destinations">Destinations</NavLink>
+            <NavLink to="featured">Featured</NavLink>
+            <NavLink to="testimonials">Testimonials</NavLink>
+            <NavLink to="subscribe">Subscribe</NavLink>
           </div>
           
           <div className="md:hidden flex items-center">
@@ -103,50 +100,10 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`md:hidden bg-white ${mobileMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <ScrollLink 
-            to="destinations" 
-            spy={true} 
-            smooth={true} 
-            offset={-80} 
-            duration={500}
-            className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md cursor-pointer"
-            onClick={closeMobileMenu}
-          >
-            Destinations
-          </ScrollLink>
-          <ScrollLink 
-            to="featured" 
-            spy={true} 
-            smooth={true} 
-            offset={-80} 
-            duration={500}
-            className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md cursor-pointer"
-            onClick={closeMobileMenu}
-          >
-            Featured
-          </ScrollLink>
-          <ScrollLink 
-            to="testimonials" 
-            spy={true} 
-            smooth={true} 
-            offset={-80} 
-            duration={500}
-            className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md cursor-pointer"
-            onClick={closeMobileMenu}
-          >
-            Testimonials
-          </ScrollLink>
-          <ScrollLink 
-            to="subscribe" 
-            spy={true} 
-            smooth={true} 
-            offset={-80} 
-            duration={500}
-            className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md cursor-pointer"
-            onClick={closeMobileMenu}
-          >
-            Subscribe
-          </ScrollLink>
+          <NavLink to="destinations">Destinations</NavLink>
+          <NavLink to="featured">Featured</NavLink>
+          <NavLink to="testimonials">Testimonials</NavLink>
+          <NavLink to="subscribe">Subscribe</NavLink>
         </div>
       </div>
     </nav>
