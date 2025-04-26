@@ -26,7 +26,7 @@ const IslandHoppingTourPage = () => {
       {/* Hero Section */}
       <div 
         className="relative h-[60vh] bg-cover bg-center" 
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/27W9H1Z9/Private-Island.jpg')` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg')` }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -314,43 +314,43 @@ const IslandHoppingTourPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/27W9H1Z9/Private-Island.jpg" 
-                      alt="Tropical island with turquoise water" 
+                      src="https://i.ibb.co/M5VwL3c2/Private-Pool.jpg" 
+                      alt="Private pool with ocean view" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/dKk4R5s/snorkeling.jpg" 
+                      src="https://i.ibb.co/tpXnQYr3/Snorkel.jpg" 
                       alt="Snorkeling in coral reef" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/3WKcpZy/beach-lunch.jpg" 
-                      alt="Beach picnic setup" 
+                      src="https://i.ibb.co/zqWwKpz/Lagoon-Private-Resort.webp" 
+                      alt="Beach Restaurant" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/9TLj9Bx/hidden-lagoon.jpg" 
-                      alt="Hidden lagoon with limestone cliffs" 
+                      src="https://i.ibb.co/j931ksBs/Padel.jpg" 
+                      alt="Island Padel" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/Ldk2YPj/speedboat.jpg" 
-                      alt="Luxury speedboat" 
+                      src="https://i.ibb.co/gZDfXft7/Luxury-Private-Resort.jpg" 
+                      alt="Luxury private resort" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/3Y2jnR9/sunset.jpg" 
-                      alt="Sunset over the ocean" 
+                      src="https://i.ibb.co/fGKRrPhr/Open-Beach.jpg" 
+                      alt="Open beach with clear water" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -533,6 +533,81 @@ const IslandHoppingTourPage = () => {
         </div>
       </div>
       
+        {/* Similar Experiences */}
+        <div className="bg-gray-50 py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">You May Also Like</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
+              <div className="relative h-64">
+                <img 
+                  src="https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg" 
+                  alt="Luxury Cruise" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">Luxury Cruise Journey</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Embark on a breathtaking luxury cruise featuring world-class amenities, exotic destinations, and unforgettable experiences across the seas.</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 font-bold">$499 / person</span>
+                  <Link to="/experiences/luxury-cruise" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
+              <div className="relative h-64">
+                <img 
+                  src="https://i.ibb.co/21kv6qgb/Hot-Air-Ballon.jpg" 
+                  alt="Wine Country Balloon Experience" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">Wine Country Balloon Experience</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting at a renowned vineyard.</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 font-bold">$299 / person</span>
+                  <Link to="/experiences/wine-country-balloon" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
+              <div className="relative h-64">
+                <img 
+                  src="https://i.ibb.co/HDvd05yZ/Coastal-California-Tour.jpg" 
+                  alt="Coastal California Helicopter Tour" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">Coastal California Helicopter Tour</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Soar above California’s breathtaking coastline in a luxury helicopter, with panoramic views of stunning beaches, rugged cliffs, and charming seaside towns.</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 font-bold">$349 / person</span>
+                  <Link to="/experiences/coastal-california-helicopter-tour" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Reservation Modal */}
       <ReservationModal 
         isOpen={modalOpen}
