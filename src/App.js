@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import DestinationsPage from './pages/DestinationsPage';
 import DestinationDetail from './pages/DestinationDetail';
 import TravelTypePage from './pages/TravelTypePage';
+import TravelExperienceDetail from './pages/TravelExperienceDetail';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import './assets/styles/globals.css';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/destination/:destinationName" element={<DestinationDetail />} />
           <Route path="/travel-type/:travelTypeSlug" element={<TravelTypePage />} />
+          <Route path="/travel-type/:travelTypeSlug/experience/:experienceName" element={<TravelExperienceDetail />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

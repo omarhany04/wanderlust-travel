@@ -3,11 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import Button from '../components/common/Button';
 import Newsletter from '../components/sections/Newsletter';
 import travelTypesData from '../data/travelTypesData';
+import ReservationModal from '../components/common/ReservationModal';
 
 const TravelTypePage = () => {
   const { travelTypeSlug } = useParams();
   const [travelType, setTravelType] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedDestination, setSelectedDestination] = useState(null);
 
   useEffect(() => {
     // Find the travel type that matches the URL parameter
@@ -24,6 +27,15 @@ const TravelTypePage = () => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, [travelTypeSlug]);
+
+  const openModal = (destination) => {
+    setSelectedDestination(destination);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   if (loading) {
     return (
@@ -113,11 +125,20 @@ const TravelTypePage = () => {
               </div>
               <div className="p-6">
                 <p className="text-gray-600 mb-4">{destination.description}</p>
-                <Link to="/contact">
-                  <button className="text-teal-600 font-medium flex items-center">
+                <div className="flex justify-between items-center">
+                  <Link 
+                    to={`/travel-type/${travelTypeSlug}/experience/${destination.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} 
+                    className="text-teal-600 font-medium flex items-center"
+                  >
                     Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Link>
+                  <button
+                    onClick={() => openModal(destination)}
+                    className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition"
+                  >
+                    Reserve
                   </button>
-                </Link>
+                </div>
               </div>
             </div>
           ))}
@@ -138,6 +159,18 @@ const TravelTypePage = () => {
           </Link>
         </div>
       </div>
+
+      {/* Reservation Modal */}
+      {selectedDestination && (
+        <ReservationModal
+          isOpen={modalOpen}
+          onClose={closeModal}
+          destinationName={selectedDestination.name}
+          price={selectedDestination.price || '1,999'}
+          duration={selectedDestination.duration || 7}
+          departureDate="June 15, 2025"
+        />
+      )}
 
       <Newsletter />
     </div>
