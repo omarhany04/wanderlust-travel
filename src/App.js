@@ -9,6 +9,9 @@ import TravelExperienceDetail from './pages/TravelExperienceDetail';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import IslandHoppingTourPage from './pages/IslandHoppingTourPage';
+import LuxuryCruiseJourneyPage from './pages/LuxuryCruiseJourneyPage';
+import WineCountryBalloonPage from './pages/WineCountryBalloonPage';
+import CoastalCaliforniaHelicopterPage from './pages/CoastalCaliforniaHelicopterPage';
 import SearchResultsPage from './pages/SearchResultsPage';
 import './assets/styles/globals.css';
 
@@ -25,6 +28,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/experiences/island-hopping-tour" element={<IslandHoppingTourPage />} />
+          <Route path="/experiences/luxury-cruise-journey" element={<LuxuryCruiseJourneyPage />} />
+          <Route path="/experiences/wine-country-balloon" element={<WineCountryBalloonPage />} />
+          <Route path="/experiences/coastal-california-helicopter-tour" element={<CoastalCaliforniaHelicopterPage />} />
           <Route path="/search" element={<SearchResultsPage />} />
         </Routes>
       </Layout>

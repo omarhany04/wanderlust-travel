@@ -34,7 +34,7 @@ const SearchResultsPage = () => {
       name: 'Luxury Cruise Journey',
       description: 'Embark on a breathtaking luxury cruise featuring world-class amenities, exotic destinations, and unforgettable experiences across the seas.',
       image: 'https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg',
-      path: '/experiences/luxury-cruise',
+      path: '/experiences/luxury-cruise-journey',
       price: '499',
       rating: 4.8,
       reviews: 64,

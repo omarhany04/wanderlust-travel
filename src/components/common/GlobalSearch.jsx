@@ -22,6 +22,7 @@ const GlobalSearch = ({ initialQuery = '' }) => {
 
     const normalizedQuery = query.toLowerCase().trim();
     
+    
     // Search destinations
     const matchedDestinations = destinationsData.filter(
       destination => 
@@ -51,6 +52,7 @@ const GlobalSearch = ({ initialQuery = '' }) => {
       path: `/travel-type/${travelType.slug}`
     }));
     
+    
     // Search featured experiences
     const featuredExperiences = [
       {
@@ -63,21 +65,21 @@ const GlobalSearch = ({ initialQuery = '' }) => {
       {
         id: 'luxury-cruise',
         name: 'Luxury Cruise Journey',
-        description: 'Embark on a breathtaking luxury cruise featuring world-class amenities.',
+        description: 'Embark on a breathtaking luxury cruise featuring world-class amenities and exotic destinations.',
         image: 'https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg',
-        path: '/experiences/luxury-cruise'
+        path: '/experiences/luxury-cruise-journey'
       },
       {
         id: 'wine-balloon',
         name: 'Wine Country Balloon Experience',
-        description: 'Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight.',
+        description: 'Drift above rolling vineyards during a serene sunrise hot air balloon flight, followed by a private wine tasting.',
         image: 'https://i.ibb.co/21kv6qgb/Hot-Air-Ballon.jpg',
         path: '/experiences/wine-country-balloon'
       },
       {
         id: 'helicopter-tour',
         name: 'Coastal California Helicopter Tour',
-        description: 'Soar above California\'s breathtaking coastline in a luxury helicopter.',
+        description: 'Soar above California\'s breathtaking coastline in a luxury helicopter, with panoramic views of stunning beaches.',
         image: 'https://i.ibb.co/HDvd05yZ/Coastal-California-Tour.jpg',
         path: '/experiences/coastal-california-helicopter-tour'
       }

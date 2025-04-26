@@ -4,7 +4,7 @@ import Button from '../components/common/Button';
 import Newsletter from '../components/sections/Newsletter';
 import ReservationModal from '../components/common/ReservationModal';
 
-const IslandHoppingTourPage = () => {
+const WineCountryBalloonPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('description');
 
@@ -26,14 +26,14 @@ const IslandHoppingTourPage = () => {
       {/* Hero Section */}
       <div 
         className="relative h-[60vh] bg-cover bg-center" 
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg')` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/21kv6qgb/Hot-Air-Ballon.jpg')` }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <span className="inline-block bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-              Featured Experience
+              Signature Experience
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Private Island Hopping Tour</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Wine Country Balloon Experience</h1>
             <div className="flex items-center justify-center mb-4">
               <div className="text-yellow-400 flex">
                 <i className="fas fa-star"></i>
@@ -43,11 +43,11 @@ const IslandHoppingTourPage = () => {
                 <i className="fas fa-star"></i>
               </div>
               <span className="ml-2 text-white">
-                5.0 (89 reviews)
+                4.9 (42 reviews)
               </span>
             </div>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Explore hidden islands in the crystal-clear waters of the Andaman Sea
+              Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ const IslandHoppingTourPage = () => {
               <i className="fas fa-calendar-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Duration</div>
-                <div className="font-bold">Full Day</div>
+                <div className="font-bold">4-5 Hours</div>
               </div>
             </div>
             <div className="flex items-center">
@@ -75,14 +75,14 @@ const IslandHoppingTourPage = () => {
               <i className="fas fa-users text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Group Size</div>
-                <div className="font-bold">Max 8 People</div>
+                <div className="font-bold">4-8 People per Balloon</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-map-marker-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Location</div>
-                <div className="font-bold">Andaman Sea, Thailand</div>
+                <div className="font-bold">Napa Valley, California</div>
               </div>
             </div>
           </div>
@@ -143,61 +143,49 @@ const IslandHoppingTourPage = () => {
             {/* Description Tab Content */}
             {activeTab === 'description' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">About This Tour</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">About This Experience</h2>
                 <div className="prose prose-lg max-w-none mb-8">
                   <p className="text-gray-600 mb-4">
-                    Embark on an exclusive island-hopping adventure in the crystal-clear waters of 
-                    the Andaman Sea. This private tour takes you to hidden gems away from the tourist 
-                    crowds, with opportunities for swimming, snorkeling, and relaxing on pristine beaches.
+                    Experience the magic of Napa Valley from a whole new perspective with our Wine Country Balloon Experience. This unforgettable journey combines the thrill of hot air ballooning with the sophistication of wine country, creating memories that will last a lifetime.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Escape the ordinary and explore Thailand's most stunning islands with our expertly guided 
-                    private tour. Your day begins as you board your private speedboat, where your experienced 
-                    captain will navigate you through the emerald waters of the Andaman Sea.
+                    Your adventure begins in the quiet moments before dawn, as you watch our experienced crew inflate the colorful balloon that will carry you into the sky. As the sun begins to rise, you'll gently lift off the ground and float peacefully above the patchwork of vineyards, rolling hills, and picturesque estates that make Napa Valley one of the world's most beautiful wine regions.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Throughout the day, you'll discover secluded coves and hidden lagoons that remain untouched 
-                    by mass tourism. Dive into vibrant coral reefs teeming with exotic marine life, where schools 
-                    of colorful fish dance around you as you explore this underwater paradise with our professional 
-                    snorkeling equipment.
+                    From your privileged vantage point hundreds of feet above the valley floor, witness the first rays of sunlight gilding the landscape, casting long shadows and illuminating the rows of grapevines stretching toward the horizon. Your pilot, an expert in both ballooning and local geography, will point out landmarks and share fascinating insights about the region's terroir and wine-making traditions.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Midday brings a gourmet picnic lunch served on a secluded beach. Savor fresh, local delicacies 
-                    as the gentle waves provide a soothing soundtrack to your meal. After lunch, explore hidden caves 
-                    and secret beaches accessible only by boat, or simply relax and soak up the tropical sun.
+                    The tranquility of balloon flight is unlike any other form of travel—floating silently with the breeze, with only the occasional blast from the burner to remind you of the gentle technology keeping you aloft. Each flight path is unique, determined by the day's wind patterns, ensuring that every journey is a one-of-a-kind experience.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    As the day draws to a close, we'll find the perfect spot to witness the spectacular sunset. 
-                    Enjoy handcrafted cocktails as the sky transforms into a canvas of red, orange, and purple hues. 
-                    Our guide will capture these magical moments, providing you with professional photos to remember 
-                    your journey.
+                    After approximately an hour in the air, you'll return to earth for the second part of your experience: a private wine tasting at one of Napa's premier boutique wineries. Here, you'll sample exceptional wines paired with a gourmet breakfast spread featuring locally sourced ingredients. The winemaker will guide you through each tasting, explaining the unique characteristics that Napa's microclimate and soil impart to their vintages.
                   </p>
                 </div>
 
                 {/* Highlights Section */}
                 <div className="mb-12">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Tour Highlights</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Experience Highlights</h3>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Exclusive private speedboat with experienced captain and guide</span>
+                        <span className="text-gray-700">Sunrise hot air balloon flight over Napa Valley's stunning vineyard landscape</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Visit to 4-5 stunning islands and hidden coves</span>
+                        <span className="text-gray-700">Experienced pilots with extensive knowledge of the region</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Snorkeling at premier reef locations with vibrant marine life</span>
+                        <span className="text-gray-700">Private wine tasting experience at a boutique winery</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Gourmet lunch and refreshments throughout the day</span>
+                        <span className="text-gray-700">Gourmet breakfast with locally sourced ingredients</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Sunset cocktail experience with professional photography</span>
+                        <span className="text-gray-700">Commemorative flight certificate and professional photos of your experience</span>
                       </li>
                     </ul>
                   </div>
@@ -209,35 +197,35 @@ const IslandHoppingTourPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Private speedboat and crew</span>
+                      <span className="text-gray-700">Hot air balloon flight (approx. 1 hour)</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">English-speaking guide</span>
+                      <span className="text-gray-700">Expert pilot and commentary</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Gourmet lunch and snacks</span>
+                      <span className="text-gray-700">Private winery tasting with guide</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Soft drinks and water</span>
+                      <span className="text-gray-700">Gourmet breakfast with champagne toast</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Snorkeling equipment</span>
+                      <span className="text-gray-700">Transportation between launch site and winery</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Sunset cocktails</span>
+                      <span className="text-gray-700">Digital souvenir photos</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Professional photographs</span>
+                      <span className="text-gray-700">Commemorative flight certificate</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Hotel pickup and drop-off</span>
+                      <span className="text-gray-700">All necessary safety equipment</span>
                     </div>
                   </div>
                 </div>
@@ -247,60 +235,48 @@ const IslandHoppingTourPage = () => {
             {/* Itinerary Tab Content */}
             {activeTab === 'itinerary' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">Tour Itinerary</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">Experience Itinerary</h2>
                 <div className="space-y-6">
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">08:00 AM - Hotel Pickup</h4>
+                    <h4 className="text-xl font-bold text-gray-800">5:15 AM - Check-in & Briefing</h4>
                     <p className="text-gray-600 mt-2">
-                      Your adventure begins with a comfortable pickup from your hotel. Meet your friendly guide who will brief you on the day's exciting itinerary.
+                      Arrive at our meeting point in Yountville where you'll be greeted by our friendly team. Enjoy a light pre-flight coffee or tea while our pilot provides a comprehensive safety briefing and explains what to expect during your balloon adventure.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:00 AM - Departure by Private Speedboat</h4>
+                    <h4 className="text-xl font-bold text-gray-800">5:45 AM - Balloon Inflation</h4>
                     <p className="text-gray-600 mt-2">
-                      Board your exclusive speedboat at the marina. After a safety briefing, set off into the azure waters of the Andaman Sea with your experienced captain.
+                      Witness the magical process of balloon inflation as our experienced ground crew prepares for launch. This is a fascinating spectacle and a great photo opportunity as the enormous balloon gradually takes shape in the pre-dawn light.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:45 AM - First Island Stop</h4>
+                    <h4 className="text-xl font-bold text-gray-800">6:15 AM - Lift-off & Sunrise Flight</h4>
                     <p className="text-gray-600 mt-2">
-                      Arrive at a secluded island known for its pristine beach and crystal-clear waters. Enjoy swimming and relaxing in this paradise away from the crowds.
+                      Board your balloon basket and experience the gentle sensation of lifting off the ground. Rise into the air just as the first rays of sunlight begin to illuminate the valley. Spend approximately one hour floating over the picturesque landscape of Napa Valley, with exceptional views of vineyards, mountains, and morning mist.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">11:00 AM - Snorkeling Adventure</h4>
+                    <h4 className="text-xl font-bold text-gray-800">7:30 AM - Landing & Celebration</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit a vibrant coral reef teeming with tropical fish and marine life. Your guide will lead you to the best spots with professional snorkeling equipment provided.
+                      Experience a gentle landing in one of the valley's open fields. Participate in the traditional post-flight champagne toast, a ballooning tradition that dates back to the 18th century, and receive your commemorative flight certificate.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">12:30 PM - Gourmet Beach Lunch</h4>
+                    <h4 className="text-xl font-bold text-gray-800">8:00 AM - Transfer to Winery</h4>
                     <p className="text-gray-600 mt-2">
-                      Enjoy a delicious gourmet picnic lunch prepared with fresh local ingredients, served on a secluded beach with stunning views. Relax in the shade as your crew sets up a comfortable dining area.
+                      Board our comfortable transportation for a short, scenic drive to a prestigious boutique winery that specially opens early for our guests. Enjoy the morning tranquility of wine country before the typical tourist crowds arrive.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">02:00 PM - Hidden Lagoon Exploration</h4>
+                    <h4 className="text-xl font-bold text-gray-800">8:30 AM - Gourmet Breakfast & Wine Tasting</h4>
                     <p className="text-gray-600 mt-2">
-                      Discover a secret lagoon accessible only by boat. Marvel at the towering limestone cliffs and take Instagram-worthy photos in this natural wonder.
+                      Arrive at the winery for a private tasting experience paired with a gourmet breakfast prepared by a local chef. Sample 4-5 premium wines while learning about the winemaking process and the unique characteristics of Napa Valley terroir.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">03:30 PM - Island Hopping</h4>
+                    <h4 className="text-xl font-bold text-gray-800">10:00 AM - Experience Conclusion</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit two more stunning islands, each with its own unique character and beauty. Take time to swim, explore, or simply relax on the white sandy beaches.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">05:30 PM - Sunset Cocktails</h4>
-                    <p className="text-gray-600 mt-2">
-                      End your day with a magical sunset experience. Enjoy handcrafted cocktails while watching the sun dip below the horizon, painting the sky in spectacular colors. Your guide will capture these special moments with professional photography.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">07:00 PM - Return & Hotel Drop-off</h4>
-                    <p className="text-gray-600 mt-2">
-                      Return to the marina as dusk settles over the Andaman Sea. Your driver will transfer you back to your hotel with memories to last a lifetime.
+                      The experience concludes at the winery, where you'll receive digital copies of your souvenir photos. You're welcome to continue exploring the winery at your leisure or return to Yountville with our transportation. Our team can provide recommendations for additional activities to enjoy in Napa Valley for the remainder of your day.
                     </p>
                   </div>
                 </div>
@@ -310,47 +286,47 @@ const IslandHoppingTourPage = () => {
             {/* Gallery Tab Content */}
             {activeTab === 'gallery' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">Tour Gallery</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">Experience Gallery</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/M5VwL3c2/Private-Pool.jpg" 
-                      alt="Private pool with ocean view" 
+                      src="https://i.ibb.co/G28NvtR/Balloon-Inflation.jpg" 
+                      alt="Balloon Inflation" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/tpXnQYr3/Snorkel.jpg" 
-                      alt="Snorkeling in coral reef" 
+                      src="https://i.ibb.co/r7ZMdNG/Balloon-Flight.jpg" 
+                      alt="Balloon Flight Over Vineyards" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/zqWwKpz/Lagoon-Private-Resort.webp" 
-                      alt="Beach Restaurant" 
+                      src="https://i.ibb.co/ZKbTJwh/Balloon-Sunrise.jpg" 
+                      alt="Sunrise View from Balloon" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/j931ksBs/Padel.jpg" 
-                      alt="Island Padel" 
+                      src="https://i.ibb.co/pLQxFmb/Wine-Tasting.jpg" 
+                      alt="Private Wine Tasting" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/gZDfXft7/Luxury-Private-Resort.jpg" 
-                      alt="Luxury private resort" 
+                      src="https://i.ibb.co/DK9fjKY/Gourmet-Breakfast.jpg" 
+                      alt="Gourmet Breakfast" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/fGKRrPhr/Open-Beach.jpg" 
-                      alt="Open beach with clear water" 
+                      src="https://i.ibb.co/V9kXDXG/Napa-Valley-Vineyard.jpg" 
+                      alt="Napa Valley Vineyard" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -363,7 +339,7 @@ const IslandHoppingTourPage = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Guest Reviews</h2>
                 <div className="flex items-center mb-8">
-                  <div className="text-yellow-400 text-4xl font-bold mr-4">5.0</div>
+                  <div className="text-yellow-400 text-4xl font-bold mr-4">4.9</div>
                   <div>
                     <div className="flex text-yellow-400 mb-1">
                       <i className="fas fa-star"></i>
@@ -372,7 +348,7 @@ const IslandHoppingTourPage = () => {
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
                     </div>
-                    <div className="text-gray-600">Based on 89 reviews</div>
+                    <div className="text-gray-600">Based on 42 reviews</div>
                   </div>
                 </div>
 
@@ -380,10 +356,10 @@ const IslandHoppingTourPage = () => {
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">JD</span>
+                        <span className="text-gray-700 font-bold">EB</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">James Davidson</h5>
+                        <h5 className="font-bold text-gray-800">Emma & Brian Taylor</h5>
                         <div className="text-gray-600 text-sm">April 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -395,17 +371,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      This was the highlight of our Thailand trip! Our guide Chai was knowledgeable and fun, and took us to stunning islands away from the tourist crowds. The private speedboat made the journey comfortable, and the lunch on a secluded beach was amazing. Snorkeling in crystal clear water with colorful fish all around was a magical experience. Highly recommend!
+                      We booked this for our anniversary and it exceeded all expectations! Our pilot Mark was so knowledgeable and made us feel completely at ease. The views of the valley at sunrise were absolutely breathtaking—the photos don't do it justice. The wine tasting afterward at a small family-owned winery was the perfect complement to the balloon ride. The entire experience felt intimate and special, not touristy at all. Absolutely worth waking up early for!
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">ML</span>
+                        <span className="text-gray-700 font-bold">SJ</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Maria Lopez</h5>
+                        <h5 className="font-bold text-gray-800">Sarah Johnson</h5>
                         <div className="text-gray-600 text-sm">March 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -417,17 +393,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      Worth every penny! The private tour meant we could avoid the crowds and really enjoy each location. The hidden lagoon was breathtaking, and the sunset cocktails were a perfect end to the day. Our captain knew exactly where to take us for the best experiences, and the photos they took for us are stunning. A truly unforgettable experience!
+                      This balloon experience was the highlight of my solo trip to Napa! I was a bit nervous about the flight, but the crew was so professional and reassuring. The balloon itself felt completely stable, and the silence as we drifted over the vineyards was truly magical. Our group was small (just 6 people), which made it feel exclusive. The breakfast and wine tasting afterward was delicious, and I appreciated the care taken to explain each wine. A perfect way to see Napa from a different perspective.
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">RK</span>
+                        <span className="text-gray-700 font-bold">DM</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Rob & Kate Williams</h5>
+                        <h5 className="font-bold text-gray-800">David Martinez</h5>
                         <div className="text-gray-600 text-sm">February 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -439,29 +415,7 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      We booked this for our honeymoon and it exceeded all expectations! From the moment we were picked up at our hotel to the final drop-off, everything was perfect. The islands were like something from a movie, the snorkeling was incredible, and the gourmet lunch on the beach was so romantic. The sunset cocktails were a beautiful touch, and we'll treasure the photos forever. Would do it again in a heartbeat!
-                    </p>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">AT</span>
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-gray-800">Alex Thompson</h5>
-                        <div className="text-gray-600 text-sm">January 2025</div>
-                      </div>
-                      <div className="ml-auto text-yellow-400">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                      </div>
-                    </div>
-                    <p className="text-gray-700">
-                      An absolute 10/10 experience! Having our own boat made all the difference - we could stay longer at places we loved and move on when we wanted to. The crew was professional and friendly, the food was delicious, and the snorkeling spots were teeming with fish. The hidden lagoon was like something from a dream. If you're considering this tour, just book it - you won't regret it!
+                      I surprised my wife with this balloon ride for her birthday, and it was worth every penny! The whole experience was seamless from start to finish. Watching the balloon inflate in the early morning light was fascinating, and once we were in the air, the views were simply incredible. Our pilot pointed out all the famous vineyards and shared interesting facts about the valley's history. The post-flight champagne toast followed by the wine tasting and gourmet breakfast at the winery was the perfect way to cap off the morning. If you're debating whether to do this, just go for it—it's truly a once-in-a-lifetime experience.
                     </p>
                   </div>
                 </div>
@@ -473,7 +427,7 @@ const IslandHoppingTourPage = () => {
           <div>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden sticky top-24">
               <div className="bg-teal-600 text-white p-6">
-                <h3 className="text-xl font-bold mb-2">Book This Tour</h3>
+                <h3 className="text-xl font-bold mb-2">Book This Experience</h3>
                 <p className="text-teal-100">Secure your spot today!</p>
               </div>
               <div className="p-6">
@@ -484,11 +438,11 @@ const IslandHoppingTourPage = () => {
                   </div>
                   <div className="flex justify-between mb-2">
                     <span className="text-gray-600">Duration:</span>
-                    <span className="font-bold text-gray-800">Full Day</span>
+                    <span className="font-bold text-gray-800">4-5 Hours</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Next Available:</span>
-                    <span className="font-bold text-gray-800">Tomorrow</span>
+                    <span className="text-gray-600">Availability:</span>
+                    <span className="font-bold text-gray-800">Daily (Weather Permitting)</span>
                   </div>
                 </div>
                 
@@ -507,14 +461,14 @@ const IslandHoppingTourPage = () => {
                 
                 <div className="mt-6 flex items-center text-gray-600 justify-center">
                   <i className="fas fa-calendar-check mr-2"></i>
-                  <span>Free cancellation up to 48 hours before</span>
+                  <span>Free cancellation up to 72 hours before</span>
                 </div>
               </div>
               
               <div className="border-t p-6">
                 <h4 className="font-bold text-gray-800 mb-3">Have Questions?</h4>
                 <p className="text-gray-600 mb-4">
-                  Our travel experts are ready to help you plan your dream trip.
+                  Our travel experts are ready to help you plan your wine country adventure.
                 </p>
                 <div className="flex items-center">
                   <i className="fas fa-phone-alt bg-teal-100 text-teal-600 p-3 rounded-full mr-4"></i>
@@ -538,6 +492,28 @@ const IslandHoppingTourPage = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
               <div className="relative h-64">
                 <img 
+                  src="https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg" 
+                  alt="Private Island Hopping Tour" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">Private Island Hopping Tour</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Embark on an exclusive island-hopping adventure in the crystal-clear waters of the Andaman Sea with opportunities for swimming and snorkeling.</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 font-bold">$299 / person</span>
+                  <Link to="/experiences/island-hopping-tour" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
+              <div className="relative h-64">
+                <img 
                   src="https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg" 
                   alt="Luxury Cruise Journey" 
                   className="w-full h-full object-cover"
@@ -551,28 +527,6 @@ const IslandHoppingTourPage = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-gray-800 font-bold">$499 / person</span>
                   <Link to="/experiences/luxury-cruise-journey" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
-              <div className="relative h-64">
-                <img 
-                  src="https://i.ibb.co/21kv6qgb/Hot-Air-Ballon.jpg" 
-                  alt="Wine Country Balloon Experience" 
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-white text-xl font-bold">Wine Country Balloon Experience</h3>
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting at a renowned vineyard.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-800 font-bold">$299 / person</span>
-                  <Link to="/experiences/wine-country-balloon" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
                     Learn More
                   </Link>
                 </div>
@@ -608,10 +562,10 @@ const IslandHoppingTourPage = () => {
       <ReservationModal 
         isOpen={modalOpen}
         onClose={closeModal}
-        destinationName="Private Island Hopping Tour"
+        destinationName="Wine Country Balloon Experience"
         price="299"
         duration="1"
-        departureDate="Available Daily"
+        departureDate="Available Daily (Weather Permitting)"
       />
       
       <Newsletter />
@@ -619,4 +573,4 @@ const IslandHoppingTourPage = () => {
   );
 };
 
-export default IslandHoppingTourPage;
+export default WineCountryBalloonPage;

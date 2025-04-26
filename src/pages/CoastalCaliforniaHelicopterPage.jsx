@@ -4,7 +4,7 @@ import Button from '../components/common/Button';
 import Newsletter from '../components/sections/Newsletter';
 import ReservationModal from '../components/common/ReservationModal';
 
-const IslandHoppingTourPage = () => {
+const CoastalCaliforniaHelicopterPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('description');
 
@@ -26,28 +26,28 @@ const IslandHoppingTourPage = () => {
       {/* Hero Section */}
       <div 
         className="relative h-[60vh] bg-cover bg-center" 
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg')` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/HDvd05yZ/Coastal-California-Tour.jpg')` }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <span className="inline-block bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-              Featured Experience
+              Premium Experience
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Private Island Hopping Tour</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Coastal California Helicopter Tour</h1>
             <div className="flex items-center justify-center mb-4">
               <div className="text-yellow-400 flex">
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i>
               </div>
               <span className="ml-2 text-white">
-                5.0 (89 reviews)
+                4.7 (38 reviews)
               </span>
             </div>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Explore hidden islands in the crystal-clear waters of the Andaman Sea
+              Soar above California's breathtaking coastline in a luxury helicopter
             </p>
           </div>
         </div>
@@ -61,28 +61,28 @@ const IslandHoppingTourPage = () => {
               <i className="fas fa-calendar-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Duration</div>
-                <div className="font-bold">Full Day</div>
+                <div className="font-bold">2-3 Hours</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-tag text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Price</div>
-                <div className="font-bold">$299 per person</div>
+                <div className="font-bold">$349 per person</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-users text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Group Size</div>
-                <div className="font-bold">Max 8 People</div>
+                <div className="font-bold">Max 5 People</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-map-marker-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Location</div>
-                <div className="font-bold">Andaman Sea, Thailand</div>
+                <div className="font-bold">San Diego to La Jolla</div>
               </div>
             </div>
           </div>
@@ -146,31 +146,22 @@ const IslandHoppingTourPage = () => {
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">About This Tour</h2>
                 <div className="prose prose-lg max-w-none mb-8">
                   <p className="text-gray-600 mb-4">
-                    Embark on an exclusive island-hopping adventure in the crystal-clear waters of 
-                    the Andaman Sea. This private tour takes you to hidden gems away from the tourist 
-                    crowds, with opportunities for swimming, snorkeling, and relaxing on pristine beaches.
+                    Experience the stunning California coastline from a truly unique perspective with our exclusive helicopter tour. This unforgettable aerial adventure showcases the dramatic meeting of land and sea along one of America's most beautiful stretches of shoreline.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Escape the ordinary and explore Thailand's most stunning islands with our expertly guided 
-                    private tour. Your day begins as you board your private speedboat, where your experienced 
-                    captain will navigate you through the emerald waters of the Andaman Sea.
+                    Flying in our state-of-the-art helicopter, you'll enjoy panoramic views that are simply impossible to appreciate from ground level. Our carefully designed flight path takes you over miles of pristine beaches, dramatic cliffs, luxurious oceanfront estates, and charming coastal communities.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Throughout the day, you'll discover secluded coves and hidden lagoons that remain untouched 
-                    by mass tourism. Dive into vibrant coral reefs teeming with exotic marine life, where schools 
-                    of colorful fish dance around you as you explore this underwater paradise with our professional 
-                    snorkeling equipment.
+                    Your journey begins in San Diego, where you'll meet your experienced pilot who will provide a comprehensive safety briefing before takeoff. Once airborne, you'll soar along the Pacific coast, with the vast blue ocean on one side and Southern California's stunning landscape on the other.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Midday brings a gourmet picnic lunch served on a secluded beach. Savor fresh, local delicacies 
-                    as the gentle waves provide a soothing soundtrack to your meal. After lunch, explore hidden caves 
-                    and secret beaches accessible only by boat, or simply relax and soak up the tropical sun.
+                    As you cruise at the perfect altitude for sightseeing, your pilot will serve as your personal guide, pointing out landmarks and sharing fascinating insights about the region's geography, history, and famous residents. The helicopter's noise-canceling headset system ensures you won't miss a word of commentary.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    As the day draws to a close, we'll find the perfect spot to witness the spectacular sunset. 
-                    Enjoy handcrafted cocktails as the sky transforms into a canvas of red, orange, and purple hues. 
-                    Our guide will capture these magical moments, providing you with professional photos to remember 
-                    your journey.
+                    You'll fly over iconic spots including the pristine shores of Coronado Beach, the dramatic sea caves and coves of La Jolla, and the magnificent Torrey Pines State Natural Reserve. Keep your eyes peeled for marine life below—it's common to spot dolphins, sea lions, and even migrating whales (seasonal) from this privileged vantage point.
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    Our tour includes a special landing at a scenic overlook where you'll enjoy champagne and gourmet refreshments while taking in the breathtaking coastal panorama. This mid-flight break provides the perfect opportunity to capture stunning photos and simply savor the moment.
                   </p>
                 </div>
 
@@ -181,23 +172,23 @@ const IslandHoppingTourPage = () => {
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Exclusive private speedboat with experienced captain and guide</span>
+                        <span className="text-gray-700">Aerial views of San Diego's stunning coastline in a luxury helicopter</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Visit to 4-5 stunning islands and hidden coves</span>
+                        <span className="text-gray-700">Exclusive landing at a scenic coastal overlook with champagne service</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Snorkeling at premier reef locations with vibrant marine life</span>
+                        <span className="text-gray-700">Fly over famous landmarks including La Jolla Cove and Torrey Pines</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Gourmet lunch and refreshments throughout the day</span>
+                        <span className="text-gray-700">Opportunity to spot marine wildlife including dolphins and whales (seasonal)</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Sunset cocktail experience with professional photography</span>
+                        <span className="text-gray-700">Expert pilot commentary on local landmarks and geography</span>
                       </li>
                     </ul>
                   </div>
@@ -209,35 +200,35 @@ const IslandHoppingTourPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Private speedboat and crew</span>
+                      <span className="text-gray-700">Helicopter flight (approx. 60-90 minutes)</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">English-speaking guide</span>
+                      <span className="text-gray-700">Experienced pilot and live commentary</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Gourmet lunch and snacks</span>
+                      <span className="text-gray-700">Noise-canceling headsets</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Soft drinks and water</span>
+                      <span className="text-gray-700">Champagne and refreshments</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Snorkeling equipment</span>
+                      <span className="text-gray-700">Exclusive landing at scenic overlook</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Sunset cocktails</span>
+                      <span className="text-gray-700">Digital souvenir photos</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Professional photographs</span>
+                      <span className="text-gray-700">Luxury transportation to/from helipad</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Hotel pickup and drop-off</span>
+                      <span className="text-gray-700">All helipad fees and taxes</span>
                     </div>
                   </div>
                 </div>
@@ -250,57 +241,51 @@ const IslandHoppingTourPage = () => {
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Tour Itinerary</h2>
                 <div className="space-y-6">
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">08:00 AM - Hotel Pickup</h4>
+                    <h4 className="text-xl font-bold text-gray-800">1:00 PM - Arrival & Check-in</h4>
                     <p className="text-gray-600 mt-2">
-                      Your adventure begins with a comfortable pickup from your hotel. Meet your friendly guide who will brief you on the day's exciting itinerary.
+                      Arrive at our exclusive helipad lounge in San Diego. Enjoy welcome refreshments while completing a brief check-in process. Meet your professional pilot who will provide an overview of your flight path and safety instructions.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:00 AM - Departure by Private Speedboat</h4>
+                    <h4 className="text-xl font-bold text-gray-800">1:30 PM - Takeoff & San Diego Skyline</h4>
                     <p className="text-gray-600 mt-2">
-                      Board your exclusive speedboat at the marina. After a safety briefing, set off into the azure waters of the Andaman Sea with your experienced captain.
+                      Board your luxury helicopter and take off for an initial sweep over San Diego's iconic skyline. Admire the architectural details of downtown skyscrapers and the vast expanse of San Diego Bay from your privileged aerial vantage point.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:45 AM - First Island Stop</h4>
+                    <h4 className="text-xl font-bold text-gray-800">1:45 PM - Coronado & Point Loma</h4>
                     <p className="text-gray-600 mt-2">
-                      Arrive at a secluded island known for its pristine beach and crystal-clear waters. Enjoy swimming and relaxing in this paradise away from the crowds.
+                      Cruise over the magnificent Coronado Bridge and the historic Hotel del Coronado with its distinctive red turrets. Continue past the naval installations on Point Loma and enjoy sweeping views of the entire San Diego Bay entrance.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">11:00 AM - Snorkeling Adventure</h4>
+                    <h4 className="text-xl font-bold text-gray-800">2:00 PM - Northern Coastal Communities</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit a vibrant coral reef teeming with tropical fish and marine life. Your guide will lead you to the best spots with professional snorkeling equipment provided.
+                      Fly northward along the coast, over the charming beach communities of Pacific Beach and Mission Beach. Your pilot will point out local landmarks and share interesting facts about the history and development of these iconic California beach towns.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">12:30 PM - Gourmet Beach Lunch</h4>
+                    <h4 className="text-xl font-bold text-gray-800">2:15 PM - La Jolla Coves & Sea Caves</h4>
                     <p className="text-gray-600 mt-2">
-                      Enjoy a delicious gourmet picnic lunch prepared with fresh local ingredients, served on a secluded beach with stunning views. Relax in the shade as your crew sets up a comfortable dining area.
+                      Arrive at one of the tour highlights - the dramatic coastline of La Jolla. From the air, you'll have a perfect view of the famous sea caves, secluded coves, and marine wildlife that makes this area so special. Keep your cameras ready as this offers some of the most dramatic coastal scenery in California.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">02:00 PM - Hidden Lagoon Exploration</h4>
+                    <h4 className="text-xl font-bold text-gray-800">2:30 PM - Torrey Pines Landing & Refreshment Break</h4>
                     <p className="text-gray-600 mt-2">
-                      Discover a secret lagoon accessible only by boat. Marvel at the towering limestone cliffs and take Instagram-worthy photos in this natural wonder.
+                      Experience a special landing at a scenic overlook near Torrey Pines State Natural Reserve. Step out of the helicopter to enjoy champagne and gourmet refreshments while taking in the stunning coastal panorama. Your pilot will point out geographic features visible from this exceptional vantage point.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">03:30 PM - Island Hopping</h4>
+                    <h4 className="text-xl font-bold text-gray-800">3:00 PM - Return Flight</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit two more stunning islands, each with its own unique character and beauty. Take time to swim, explore, or simply relax on the white sandy beaches.
+                      Reboard your helicopter for the return journey to San Diego. The return flight takes a slightly different route, offering new perspectives of the coastline. Fly directly over the magnificent Torrey Pines Golf Course, home of numerous PGA tournaments, before heading south along the coast.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">05:30 PM - Sunset Cocktails</h4>
+                    <h4 className="text-xl font-bold text-gray-800">3:30 PM - Landing & Conclusion</h4>
                     <p className="text-gray-600 mt-2">
-                      End your day with a magical sunset experience. Enjoy handcrafted cocktails while watching the sun dip below the horizon, painting the sky in spectacular colors. Your guide will capture these special moments with professional photography.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">07:00 PM - Return & Hotel Drop-off</h4>
-                    <p className="text-gray-600 mt-2">
-                      Return to the marina as dusk settles over the Andaman Sea. Your driver will transfer you back to your hotel with memories to last a lifetime.
+                      Touch down at the helipad where your aerial adventure began. In the lounge, your pilot will present you with digital copies of photos taken during your flight, and our team will be available to answer any questions about what you've seen and experienced.
                     </p>
                   </div>
                 </div>
@@ -314,43 +299,43 @@ const IslandHoppingTourPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/M5VwL3c2/Private-Pool.jpg" 
-                      alt="Private pool with ocean view" 
+                      src="https://i.ibb.co/B384rzT/Helicopter-Interior.jpg" 
+                      alt="Luxury Helicopter Interior" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/tpXnQYr3/Snorkel.jpg" 
-                      alt="Snorkeling in coral reef" 
+                      src="https://i.ibb.co/fkGKN6V/San-Diego-Skyline.jpg" 
+                      alt="San Diego Skyline Aerial View" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/zqWwKpz/Lagoon-Private-Resort.webp" 
-                      alt="Beach Restaurant" 
+                      src="https://i.ibb.co/vH3vDrN/La-Jolla-Cove.jpg" 
+                      alt="La Jolla Cove From Above" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/j931ksBs/Padel.jpg" 
-                      alt="Island Padel" 
+                      src="https://i.ibb.co/VSSgR2P/Torrey-Pines.jpg" 
+                      alt="Torrey Pines Reserve" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/gZDfXft7/Luxury-Private-Resort.jpg" 
-                      alt="Luxury private resort" 
+                      src="https://i.ibb.co/6vqvKPK/Champagne-Break.jpg" 
+                      alt="Champagne Break at Scenic Overlook" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/fGKRrPhr/Open-Beach.jpg" 
-                      alt="Open beach with clear water" 
+                      src="https://i.ibb.co/pfqLJBC/Coastal-Cliffs.jpg" 
+                      alt="Dramatic Coastal Cliffs" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -363,16 +348,16 @@ const IslandHoppingTourPage = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Guest Reviews</h2>
                 <div className="flex items-center mb-8">
-                  <div className="text-yellow-400 text-4xl font-bold mr-4">5.0</div>
+                  <div className="text-yellow-400 text-4xl font-bold mr-4">4.7</div>
                   <div>
                     <div className="flex text-yellow-400 mb-1">
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star-half-alt"></i>
                     </div>
-                    <div className="text-gray-600">Based on 89 reviews</div>
+                    <div className="text-gray-600">Based on 38 reviews</div>
                   </div>
                 </div>
 
@@ -380,10 +365,10 @@ const IslandHoppingTourPage = () => {
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">JD</span>
+                        <span className="text-gray-700 font-bold">MK</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">James Davidson</h5>
+                        <h5 className="font-bold text-gray-800">Michael & Kristin Brooks</h5>
                         <div className="text-gray-600 text-sm">April 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -395,17 +380,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      This was the highlight of our Thailand trip! Our guide Chai was knowledgeable and fun, and took us to stunning islands away from the tourist crowds. The private speedboat made the journey comfortable, and the lunch on a secluded beach was amazing. Snorkeling in crystal clear water with colorful fish all around was a magical experience. Highly recommend!
+                      This helicopter tour was absolutely worth every penny! We've been to San Diego several times, but seeing the coastline from the air gave us a completely new appreciation for its beauty. Our pilot Jake was professional, knowledgeable, and clearly passionate about the area. The helicopter was immaculate and comfortable, and the champagne break at Torrey Pines was magical - we even spotted dolphins from our viewpoint! The perfect way to celebrate our anniversary.
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">ML</span>
+                        <span className="text-gray-700 font-bold">LC</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Maria Lopez</h5>
+                        <h5 className="font-bold text-gray-800">Lisa Chen</h5>
                         <div className="text-gray-600 text-sm">March 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -417,17 +402,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      Worth every penny! The private tour meant we could avoid the crowds and really enjoy each location. The hidden lagoon was breathtaking, and the sunset cocktails were a perfect end to the day. Our captain knew exactly where to take us for the best experiences, and the photos they took for us are stunning. A truly unforgettable experience!
+                      As a photography enthusiast, this tour was a dream come true! The views of the coastline, especially around La Jolla, were simply spectacular. I appreciated that the pilot understood exactly what angles would work best for photos and slowed down at key spots so I could get the perfect shots. The noise-canceling headsets were a nice touch, making it easy to hear the commentary while still being able to enjoy the peaceful feeling of flying. The landing spot was perfectly chosen for even more photo opportunities. I've already recommended this to several friends!
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">RK</span>
+                        <span className="text-gray-700 font-bold">JR</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Rob & Kate Williams</h5>
+                        <h5 className="font-bold text-gray-800">James Rodriguez</h5>
                         <div className="text-gray-600 text-sm">February 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -435,33 +420,11 @@ const IslandHoppingTourPage = () => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      We booked this for our honeymoon and it exceeded all expectations! From the moment we were picked up at our hotel to the final drop-off, everything was perfect. The islands were like something from a movie, the snorkeling was incredible, and the gourmet lunch on the beach was so romantic. The sunset cocktails were a beautiful touch, and we'll treasure the photos forever. Would do it again in a heartbeat!
-                    </p>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">AT</span>
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-gray-800">Alex Thompson</h5>
-                        <div className="text-gray-600 text-sm">January 2025</div>
-                      </div>
-                      <div className="ml-auto text-yellow-400">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                      </div>
-                    </div>
-                    <p className="text-gray-700">
-                      An absolute 10/10 experience! Having our own boat made all the difference - we could stay longer at places we loved and move on when we wanted to. The crew was professional and friendly, the food was delicious, and the snorkeling spots were teeming with fish. The hidden lagoon was like something from a dream. If you're considering this tour, just book it - you won't regret it!
+                      The helicopter tour provided stunning views that simply can't be matched from the ground. Our pilot was excellent and very informative about the landmarks we were seeing. The champagne break was a nice touch, though I would have enjoyed a bit more time in the air. We were lucky enough to see a pod of dolphins off La Jolla which was truly special. The only small downside was that our flight was delayed by about 30 minutes due to weather concerns, but safety comes first so I can't complain too much. Overall, a great experience I would recommend to anyone visiting San Diego who wants to see it from a different perspective.
                     </p>
                   </div>
                 </div>
@@ -480,15 +443,15 @@ const IslandHoppingTourPage = () => {
                 <div className="mb-6">
                   <div className="flex justify-between mb-2">
                     <span className="text-gray-600">Price:</span>
-                    <span className="font-bold text-gray-800">$299 per person</span>
+                    <span className="font-bold text-gray-800">$349 per person</span>
                   </div>
                   <div className="flex justify-between mb-2">
                     <span className="text-gray-600">Duration:</span>
-                    <span className="font-bold text-gray-800">Full Day</span>
+                    <span className="font-bold text-gray-800">2-3 Hours</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Next Available:</span>
-                    <span className="font-bold text-gray-800">Tomorrow</span>
+                    <span className="text-gray-600">Availability:</span>
+                    <span className="font-bold text-gray-800">Daily (Weather Permitting)</span>
                   </div>
                 </div>
                 
@@ -514,7 +477,7 @@ const IslandHoppingTourPage = () => {
               <div className="border-t p-6">
                 <h4 className="font-bold text-gray-800 mb-3">Have Questions?</h4>
                 <p className="text-gray-600 mb-4">
-                  Our travel experts are ready to help you plan your dream trip.
+                  Our travel experts are ready to help you plan your aerial adventure.
                 </p>
                 <div className="flex items-center">
                   <i className="fas fa-phone-alt bg-teal-100 text-teal-600 p-3 rounded-full mr-4"></i>
@@ -535,6 +498,28 @@ const IslandHoppingTourPage = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">You May Also Like</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
+              <div className="relative h-64">
+                <img 
+                  src="https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg" 
+                  alt="Private Island Hopping Tour" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">Private Island Hopping Tour</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Embark on an exclusive island-hopping adventure in the crystal-clear waters of the Andaman Sea with opportunities for swimming and snorkeling.</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 font-bold">$299 / person</span>
+                  <Link to="/experiences/island-hopping-tour" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
             <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
               <div className="relative h-64">
                 <img 
@@ -569,32 +554,10 @@ const IslandHoppingTourPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting at a renowned vineyard.</p>
+                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting.</p>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-800 font-bold">$299 / person</span>
                   <Link to="/experiences/wine-country-balloon" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
-              <div className="relative h-64">
-                <img 
-                  src="https://i.ibb.co/HDvd05yZ/Coastal-California-Tour.jpg" 
-                  alt="Coastal California Helicopter Tour" 
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-white text-xl font-bold">Coastal California Helicopter Tour</h3>
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">Soar above California's breathtaking coastline in a luxury helicopter, with panoramic views of stunning beaches, rugged cliffs, and charming seaside towns.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-800 font-bold">$349 / person</span>
-                  <Link to="/experiences/coastal-california-helicopter-tour" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
                     Learn More
                   </Link>
                 </div>
@@ -608,10 +571,10 @@ const IslandHoppingTourPage = () => {
       <ReservationModal 
         isOpen={modalOpen}
         onClose={closeModal}
-        destinationName="Private Island Hopping Tour"
-        price="299"
+        destinationName="Coastal California Helicopter Tour"
+        price="349"
         duration="1"
-        departureDate="Available Daily"
+        departureDate="Available Daily (Weather Permitting)"
       />
       
       <Newsletter />
@@ -619,4 +582,4 @@ const IslandHoppingTourPage = () => {
   );
 };
 
-export default IslandHoppingTourPage;
+export default CoastalCaliforniaHelicopterPage;

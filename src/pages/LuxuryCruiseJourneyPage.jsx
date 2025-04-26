@@ -4,7 +4,7 @@ import Button from '../components/common/Button';
 import Newsletter from '../components/sections/Newsletter';
 import ReservationModal from '../components/common/ReservationModal';
 
-const IslandHoppingTourPage = () => {
+const LuxuryCruiseJourneyPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('description');
 
@@ -26,28 +26,28 @@ const IslandHoppingTourPage = () => {
       {/* Hero Section */}
       <div 
         className="relative h-[60vh] bg-cover bg-center" 
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg')` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg')` }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <span className="inline-block bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-              Featured Experience
+              Premium Experience
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Private Island Hopping Tour</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Luxury Cruise Journey</h1>
             <div className="flex items-center justify-center mb-4">
               <div className="text-yellow-400 flex">
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i>
               </div>
               <span className="ml-2 text-white">
-                5.0 (89 reviews)
+                4.8 (64 reviews)
               </span>
             </div>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Explore hidden islands in the crystal-clear waters of the Andaman Sea
+              Embark on a breathtaking luxury cruise featuring world-class amenities and exotic destinations
             </p>
           </div>
         </div>
@@ -61,28 +61,28 @@ const IslandHoppingTourPage = () => {
               <i className="fas fa-calendar-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Duration</div>
-                <div className="font-bold">Full Day</div>
+                <div className="font-bold">7 Days</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-tag text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Price</div>
-                <div className="font-bold">$299 per person</div>
+                <div className="font-bold">$499 per person</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-users text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Group Size</div>
-                <div className="font-bold">Max 8 People</div>
+                <div className="font-bold">Limited Capacity</div>
               </div>
             </div>
             <div className="flex items-center">
               <i className="fas fa-map-marker-alt text-2xl mr-3"></i>
               <div>
                 <div className="text-sm">Location</div>
-                <div className="font-bold">Andaman Sea, Thailand</div>
+                <div className="font-bold">Southeast Asia Waters</div>
               </div>
             </div>
           </div>
@@ -143,61 +143,49 @@ const IslandHoppingTourPage = () => {
             {/* Description Tab Content */}
             {activeTab === 'description' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">About This Tour</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">About This Cruise</h2>
                 <div className="prose prose-lg max-w-none mb-8">
                   <p className="text-gray-600 mb-4">
-                    Embark on an exclusive island-hopping adventure in the crystal-clear waters of 
-                    the Andaman Sea. This private tour takes you to hidden gems away from the tourist 
-                    crowds, with opportunities for swimming, snorkeling, and relaxing on pristine beaches.
+                    Embark on a journey of unparalleled luxury and adventure with our exclusive 7-day luxury cruise through the spectacular waters of Southeast Asia. This isn't just a cruise; it's a floating luxury resort experience that brings together exceptional cuisine, world-class entertainment, and unforgettable destinations.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Escape the ordinary and explore Thailand's most stunning islands with our expertly guided 
-                    private tour. Your day begins as you board your private speedboat, where your experienced 
-                    captain will navigate you through the emerald waters of the Andaman Sea.
+                    Our state-of-the-art cruise ship features spacious suites with private balconies, allowing you to enjoy breathtaking ocean views in complete privacy. The vessel has been meticulously designed to provide an atmosphere of refined elegance while ensuring maximum comfort and convenience for our guests.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Throughout the day, you'll discover secluded coves and hidden lagoons that remain untouched 
-                    by mass tourism. Dive into vibrant coral reefs teeming with exotic marine life, where schools 
-                    of colorful fish dance around you as you explore this underwater paradise with our professional 
-                    snorkeling equipment.
+                    Throughout your journey, you'll enjoy gourmet dining experiences created by our team of international chefs, featuring both local specialties and global cuisine. From intimate chef's table experiences to al fresco dining under the stars, every meal becomes a memorable event.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Midday brings a gourmet picnic lunch served on a secluded beach. Savor fresh, local delicacies 
-                    as the gentle waves provide a soothing soundtrack to your meal. After lunch, explore hidden caves 
-                    and secret beaches accessible only by boat, or simply relax and soak up the tropical sun.
+                    When you're not exploring exotic ports of call, our ship offers endless entertainment and relaxation options. Unwind at the luxurious spa with treatments inspired by ancient healing traditions, lounge by the infinity pool overlooking the ocean, or participate in enriching activities like cooking classes and cultural presentations.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    As the day draws to a close, we'll find the perfect spot to witness the spectacular sunset. 
-                    Enjoy handcrafted cocktails as the sky transforms into a canvas of red, orange, and purple hues. 
-                    Our guide will capture these magical moments, providing you with professional photos to remember 
-                    your journey.
+                    As we navigate through emerald waters dotted with limestone karsts and pristine islands, you'll have opportunities to discover hidden beaches, vibrant underwater ecosystems, and charming coastal villages. Our expert excursion team ensures that each shore visit is perfectly executed, offering both guided tours and opportunities for independent exploration.
                   </p>
                 </div>
 
                 {/* Highlights Section */}
                 <div className="mb-12">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Tour Highlights</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Cruise Highlights</h3>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Exclusive private speedboat with experienced captain and guide</span>
+                        <span className="text-gray-700">Luxury accommodation in spacious suites with private balconies</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Visit to 4-5 stunning islands and hidden coves</span>
+                        <span className="text-gray-700">Gourmet dining experiences with international and local cuisine</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Snorkeling at premier reef locations with vibrant marine life</span>
+                        <span className="text-gray-700">Exclusive access to secluded beaches and hidden coves</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Gourmet lunch and refreshments throughout the day</span>
+                        <span className="text-gray-700">Daily activities including water sports, cultural presentations, and cooking classes</span>
                       </li>
                       <li className="flex items-start">
                         <i className="fas fa-check-circle text-teal-600 mt-1 mr-3"></i>
-                        <span className="text-gray-700">Sunset cocktail experience with professional photography</span>
+                        <span className="text-gray-700">Premium spa services inspired by ancient healing traditions</span>
                       </li>
                     </ul>
                   </div>
@@ -209,35 +197,35 @@ const IslandHoppingTourPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Private speedboat and crew</span>
+                      <span className="text-gray-700">Luxury suite accommodation</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">English-speaking guide</span>
+                      <span className="text-gray-700">All meals and select beverages</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Gourmet lunch and snacks</span>
+                      <span className="text-gray-700">Daily housekeeping service</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Soft drinks and water</span>
+                      <span className="text-gray-700">Entertainment and daily activities</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Snorkeling equipment</span>
+                      <span className="text-gray-700">Wi-Fi throughout the ship</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Sunset cocktails</span>
+                      <span className="text-gray-700">Port charges and taxes</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Professional photographs</span>
+                      <span className="text-gray-700">24-hour room service</span>
                     </div>
                     <div className="bg-teal-50 p-4 rounded-lg flex items-center">
                       <i className="fas fa-check text-teal-600 mr-3"></i>
-                      <span className="text-gray-700">Hotel pickup and drop-off</span>
+                      <span className="text-gray-700">Access to fitness center and pools</span>
                     </div>
                   </div>
                 </div>
@@ -247,60 +235,48 @@ const IslandHoppingTourPage = () => {
             {/* Itinerary Tab Content */}
             {activeTab === 'itinerary' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">Tour Itinerary</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">Cruise Itinerary</h2>
                 <div className="space-y-6">
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">08:00 AM - Hotel Pickup</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 1: Embarkation - Singapore</h4>
                     <p className="text-gray-600 mt-2">
-                      Your adventure begins with a comfortable pickup from your hotel. Meet your friendly guide who will brief you on the day's exciting itinerary.
+                      Board our luxury vessel at Singapore's cruise terminal. After a champagne welcome and orientation, settle into your suite and explore the ship's facilities. Join fellow travelers for the Captain's welcome dinner as we set sail into the sunset.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:00 AM - Departure by Private Speedboat</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 2: Cruising the Gulf of Thailand</h4>
                     <p className="text-gray-600 mt-2">
-                      Board your exclusive speedboat at the marina. After a safety briefing, set off into the azure waters of the Andaman Sea with your experienced captain.
+                      Enjoy a full day at sea to experience all the ship has to offer. Relax by the infinity pool, indulge in a spa treatment, or participate in cooking classes featuring Southeast Asian cuisine. The evening features a gala dinner with international entertainment.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">09:45 AM - First Island Stop</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 3: Ko Samui, Thailand</h4>
                     <p className="text-gray-600 mt-2">
-                      Arrive at a secluded island known for its pristine beach and crystal-clear waters. Enjoy swimming and relaxing in this paradise away from the crowds.
+                      Arrive at the tropical paradise of Ko Samui. Choose between a cultural tour of Buddhist temples and local villages or a beach day with water sports at a private beach club. Return to the ship for a themed Thai dinner under the stars.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">11:00 AM - Snorkeling Adventure</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 4: Phang Nga Bay, Thailand</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit a vibrant coral reef teeming with tropical fish and marine life. Your guide will lead you to the best spots with professional snorkeling equipment provided.
+                      Cruise through the dramatic limestone karsts of Phang Nga Bay. Enjoy a day of exploration via private longboat, visiting hidden lagoons and caves. Experience a special lunch at a floating village before returning to the ship for an evening of live music and entertainment.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">12:30 PM - Gourmet Beach Lunch</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 5: Langkawi, Malaysia</h4>
                     <p className="text-gray-600 mt-2">
-                      Enjoy a delicious gourmet picnic lunch prepared with fresh local ingredients, served on a secluded beach with stunning views. Relax in the shade as your crew sets up a comfortable dining area.
+                      Discover the natural beauty of Langkawi island. Options include a cable car ride to the SkyBridge for panoramic views, a mangrove safari, or relaxation at a luxury beach resort. The evening features a Malaysian cultural performance and dinner.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">02:00 PM - Hidden Lagoon Exploration</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 6: Penang, Malaysia</h4>
                     <p className="text-gray-600 mt-2">
-                      Discover a secret lagoon accessible only by boat. Marvel at the towering limestone cliffs and take Instagram-worthy photos in this natural wonder.
+                      Explore the UNESCO-listed Georgetown in Penang, known for its colonial architecture and vibrant street art. Enjoy a guided culinary tour of this food paradise, sampling local specialties. Return to the ship for a farewell dinner with the Captain.
                     </p>
                   </div>
                   <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">03:30 PM - Island Hopping</h4>
+                    <h4 className="text-xl font-bold text-gray-800">Day 7: Disembarkation - Singapore</h4>
                     <p className="text-gray-600 mt-2">
-                      Visit two more stunning islands, each with its own unique character and beauty. Take time to swim, explore, or simply relax on the white sandy beaches.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">05:30 PM - Sunset Cocktails</h4>
-                    <p className="text-gray-600 mt-2">
-                      End your day with a magical sunset experience. Enjoy handcrafted cocktails while watching the sun dip below the horizon, painting the sky in spectacular colors. Your guide will capture these special moments with professional photography.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-teal-600 pl-4 py-2">
-                    <h4 className="text-xl font-bold text-gray-800">07:00 PM - Return & Hotel Drop-off</h4>
-                    <p className="text-gray-600 mt-2">
-                      Return to the marina as dusk settles over the Andaman Sea. Your driver will transfer you back to your hotel with memories to last a lifetime.
+                      Return to Singapore after a morning of cruising. Enjoy a final breakfast on board before disembarkation. Optional extension packages in Singapore are available for those wishing to extend their journey.
                     </p>
                   </div>
                 </div>
@@ -310,47 +286,47 @@ const IslandHoppingTourPage = () => {
             {/* Gallery Tab Content */}
             {activeTab === 'gallery' && (
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">Tour Gallery</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">Cruise Gallery</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/M5VwL3c2/Private-Pool.jpg" 
-                      alt="Private pool with ocean view" 
+                      src="https://i.ibb.co/3TBrDP1/Cruise-Suite.jpg" 
+                      alt="Luxury Suite" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/tpXnQYr3/Snorkel.jpg" 
-                      alt="Snorkeling in coral reef" 
+                      src="https://i.ibb.co/Jk5Z1MT/Cruise-Dining.jpg" 
+                      alt="Fine Dining" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/zqWwKpz/Lagoon-Private-Resort.webp" 
-                      alt="Beach Restaurant" 
+                      src="https://i.ibb.co/WFGZ97K/Cruise-Pool.jpg" 
+                      alt="Infinity Pool" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/j931ksBs/Padel.jpg" 
-                      alt="Island Padel" 
+                      src="https://i.ibb.co/B2DtkNb/Phang-Nga.jpg" 
+                      alt="Phang Nga Bay" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/gZDfXft7/Luxury-Private-Resort.jpg" 
-                      alt="Luxury private resort" 
+                      src="https://i.ibb.co/s3P7vJr/Cruise-Spa.jpg" 
+                      alt="Luxury Spa" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/fGKRrPhr/Open-Beach.jpg" 
-                      alt="Open beach with clear water" 
+                      src="https://i.ibb.co/R7Xsn0j/Langkawi.jpg" 
+                      alt="Langkawi SkyBridge" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -363,16 +339,16 @@ const IslandHoppingTourPage = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Guest Reviews</h2>
                 <div className="flex items-center mb-8">
-                  <div className="text-yellow-400 text-4xl font-bold mr-4">5.0</div>
+                  <div className="text-yellow-400 text-4xl font-bold mr-4">4.8</div>
                   <div>
                     <div className="flex text-yellow-400 mb-1">
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star-half-alt"></i>
                     </div>
-                    <div className="text-gray-600">Based on 89 reviews</div>
+                    <div className="text-gray-600">Based on 64 reviews</div>
                   </div>
                 </div>
 
@@ -380,32 +356,10 @@ const IslandHoppingTourPage = () => {
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">JD</span>
+                        <span className="text-gray-700 font-bold">RM</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">James Davidson</h5>
-                        <div className="text-gray-600 text-sm">April 2025</div>
-                      </div>
-                      <div className="ml-auto text-yellow-400">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                      </div>
-                    </div>
-                    <p className="text-gray-700">
-                      This was the highlight of our Thailand trip! Our guide Chai was knowledgeable and fun, and took us to stunning islands away from the tourist crowds. The private speedboat made the journey comfortable, and the lunch on a secluded beach was amazing. Snorkeling in crystal clear water with colorful fish all around was a magical experience. Highly recommend!
-                    </p>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">ML</span>
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-gray-800">Maria Lopez</h5>
+                        <h5 className="font-bold text-gray-800">Richard & Margaret Collins</h5>
                         <div className="text-gray-600 text-sm">March 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -417,17 +371,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      Worth every penny! The private tour meant we could avoid the crowds and really enjoy each location. The hidden lagoon was breathtaking, and the sunset cocktails were a perfect end to the day. Our captain knew exactly where to take us for the best experiences, and the photos they took for us are stunning. A truly unforgettable experience!
+                      This cruise exceeded our expectations in every way. The ship was stunning, and our suite with its private balcony was the perfect place to watch the sunset each evening. The staff anticipated our every need, and the dining was on par with Michelin-starred restaurants we've visited. The excursions were thoughtfully organized, giving us a real taste of each destination. We're already planning our next cruise with Wanderlust!
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">RK</span>
+                        <span className="text-gray-700 font-bold">JP</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Rob & Kate Williams</h5>
+                        <h5 className="font-bold text-gray-800">Jennifer Parker</h5>
                         <div className="text-gray-600 text-sm">February 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -439,17 +393,17 @@ const IslandHoppingTourPage = () => {
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      We booked this for our honeymoon and it exceeded all expectations! From the moment we were picked up at our hotel to the final drop-off, everything was perfect. The islands were like something from a movie, the snorkeling was incredible, and the gourmet lunch on the beach was so romantic. The sunset cocktails were a beautiful touch, and we'll treasure the photos forever. Would do it again in a heartbeat!
+                      As a solo traveler, I was initially hesitant about taking a cruise, but this experience completely won me over. The staff was incredibly accommodating, and the small size of the ship meant I quickly got to know other guests. The excursions to Phang Nga Bay and Langkawi were highlights - seeing those limestone karsts up close was breathtaking. The onboard activities kept me entertained during sea days, and I particularly enjoyed the cooking classes. This cruise was the perfect balance of luxury, adventure, and relaxation.
                     </p>
                   </div>
 
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-gray-700 font-bold">AT</span>
+                        <span className="text-gray-700 font-bold">TL</span>
                       </div>
                       <div>
-                        <h5 className="font-bold text-gray-800">Alex Thompson</h5>
+                        <h5 className="font-bold text-gray-800">Thomas Lee</h5>
                         <div className="text-gray-600 text-sm">January 2025</div>
                       </div>
                       <div className="ml-auto text-yellow-400">
@@ -457,11 +411,11 @@ const IslandHoppingTourPage = () => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
                       </div>
                     </div>
                     <p className="text-gray-700">
-                      An absolute 10/10 experience! Having our own boat made all the difference - we could stay longer at places we loved and move on when we wanted to. The crew was professional and friendly, the food was delicious, and the snorkeling spots were teeming with fish. The hidden lagoon was like something from a dream. If you're considering this tour, just book it - you won't regret it!
+                      The cruise was fantastic overall, though I would have enjoyed more time in Penang. The ship itself is beautiful and well-maintained, and our suite was spacious and comfortable. The food was exceptional - especially the seafood night and the Thai dinner. Staff were attentive without being intrusive. The only reason I'm not giving a full five stars is that one of our excursions was postponed due to weather, which is understandable but somewhat disappointing. Still, I would highly recommend this cruise to anyone looking for a luxury experience in Southeast Asia.
                     </p>
                   </div>
                 </div>
@@ -473,22 +427,22 @@ const IslandHoppingTourPage = () => {
           <div>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden sticky top-24">
               <div className="bg-teal-600 text-white p-6">
-                <h3 className="text-xl font-bold mb-2">Book This Tour</h3>
-                <p className="text-teal-100">Secure your spot today!</p>
+                <h3 className="text-xl font-bold mb-2">Book This Cruise</h3>
+                <p className="text-teal-100">Secure your cabin today!</p>
               </div>
               <div className="p-6">
                 <div className="mb-6">
                   <div className="flex justify-between mb-2">
                     <span className="text-gray-600">Price:</span>
-                    <span className="font-bold text-gray-800">$299 per person</span>
+                    <span className="font-bold text-gray-800">$499 per person</span>
                   </div>
                   <div className="flex justify-between mb-2">
                     <span className="text-gray-600">Duration:</span>
-                    <span className="font-bold text-gray-800">Full Day</span>
+                    <span className="font-bold text-gray-800">7 Days</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Next Available:</span>
-                    <span className="font-bold text-gray-800">Tomorrow</span>
+                    <span className="text-gray-600">Next Departure:</span>
+                    <span className="font-bold text-gray-800">May 15, 2025</span>
                   </div>
                 </div>
                 
@@ -507,14 +461,14 @@ const IslandHoppingTourPage = () => {
                 
                 <div className="mt-6 flex items-center text-gray-600 justify-center">
                   <i className="fas fa-calendar-check mr-2"></i>
-                  <span>Free cancellation up to 48 hours before</span>
+                  <span>Free cancellation up to 60 days before</span>
                 </div>
               </div>
               
               <div className="border-t p-6">
                 <h4 className="font-bold text-gray-800 mb-3">Have Questions?</h4>
                 <p className="text-gray-600 mb-4">
-                  Our travel experts are ready to help you plan your dream trip.
+                  Our travel experts are ready to help you plan your dream cruise.
                 </p>
                 <div className="flex items-center">
                   <i className="fas fa-phone-alt bg-teal-100 text-teal-600 p-3 rounded-full mr-4"></i>
@@ -538,19 +492,19 @@ const IslandHoppingTourPage = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg scale-up">
               <div className="relative h-64">
                 <img 
-                  src="https://i.ibb.co/WRX4LFv/Luxury-Cruises-Banner.jpg" 
-                  alt="Luxury Cruise Journey" 
+                  src="https://i.ibb.co/KcQ3xfFy/Speed-Boat.jpg" 
+                  alt="Private Island Hopping Tour" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-white text-xl font-bold">Luxury Cruise Journey</h3>
+                  <h3 className="text-white text-xl font-bold">Private Island Hopping Tour</h3>
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4">Embark on a breathtaking luxury cruise featuring world-class amenities, exotic destinations, and unforgettable experiences across the seas.</p>
+                <p className="text-gray-600 mb-4">Embark on an exclusive island-hopping adventure in the crystal-clear waters of the Andaman Sea with opportunities for swimming and snorkeling.</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-800 font-bold">$499 / person</span>
-                  <Link to="/experiences/luxury-cruise-journey" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
+                  <span className="text-gray-800 font-bold">$299 / person</span>
+                  <Link to="/experiences/island-hopping-tour" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
                     Learn More
                   </Link>
                 </div>
@@ -569,7 +523,7 @@ const IslandHoppingTourPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting at a renowned vineyard.</p>
+                <p className="text-gray-600 mb-4">Drift above rolling vineyards and breathtaking landscapes during a serene sunrise hot air balloon flight, followed by a private wine tasting.</p>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-800 font-bold">$299 / person</span>
                   <Link to="/experiences/wine-country-balloon" className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
@@ -608,10 +562,10 @@ const IslandHoppingTourPage = () => {
       <ReservationModal 
         isOpen={modalOpen}
         onClose={closeModal}
-        destinationName="Private Island Hopping Tour"
-        price="299"
-        duration="1"
-        departureDate="Available Daily"
+        destinationName="Luxury Cruise Journey"
+        price="499"
+        duration="7"
+        departureDate="May 15, 2025"
       />
       
       <Newsletter />
@@ -619,4 +573,4 @@ const IslandHoppingTourPage = () => {
   );
 };
 
-export default IslandHoppingTourPage;
+export default LuxuryCruiseJourneyPage;
