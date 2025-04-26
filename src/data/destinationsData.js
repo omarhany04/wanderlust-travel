@@ -8,7 +8,7 @@ const destinationsData = [
       reviews: 243,
       duration: 7,
       description: 'Experience the magic of Bali with its stunning beaches, lush rice terraces, and vibrant cultural heritage.',
-      image: 'https://i.ibb.co/xrkmDBQ/Bali1.jpg',
+      image: 'https://i.ibb.co/QqmWLfh/Bali-Banner.png',
       longDescription: `
         Bali, the famed Island of the Gods, is a tropical paradise that captivates with its blend of stunning landscapes, rich culture, and spiritual ambiance. 
         
@@ -49,7 +49,7 @@ const destinationsData = [
       reviews: 187,
       duration: 6,
       description: 'Discover the iconic white-washed buildings, blue domes, and breathtaking sunsets of Santorini.',
-      image: 'https://i.ibb.co/7x2XSpfw/Santorini.jpg',
+      image: 'https://i.ibb.co/KcnLMkbB/Santorini-Banner.jpg',
       longDescription: `
         Santorini is the jewel of the Aegean, a crescent-shaped island formed from an ancient volcanic caldera, now famous for its dramatic cliffs, white-washed buildings, and spectacular sunsets.
         
@@ -90,7 +90,7 @@ const destinationsData = [
       reviews: 215,
       duration: 9,
       description: 'Immerse yourself in Japanese culture with traditional temples, serene gardens, and historic districts.',
-      image: 'https://i.ibb.co/6cctdpSH/Kyoto.jpg',
+      image: 'https://i.ibb.co/8nj50k06/Kyoto-Banner.webp',
       longDescription: `
         Kyoto, Japan's ancient imperial capital, is a living museum of Japanese culture, tradition, and aesthetics. With over 1,600 Buddhist temples, 400 Shinto shrines, and 17 UNESCO World Heritage sites, Kyoto offers an unparalleled journey into Japan's rich cultural heritage.
         
@@ -175,7 +175,7 @@ const destinationsData = [
       reviews: 94,
       duration: 10,
       description: 'Journey through the Andes to the Lost City of the Incas with our guided, unforgettable adventure.',
-      image: 'https://i.ibb.co/S46DGWWp/Machu-Picchu.jpg',
+      image: 'https://i.ibb.co/dwcMw8tZ/Peru-Banner.webp',
       initiallyHidden: true,
       longDescription: `
         Machu Picchu, the ancient Incan citadel set high in the Andes Mountains, is one of the world's most awe-inspiring archaeological sites. Built in the 15th century and later abandoned, this "Lost City of the Incas" remained unknown to the outside world until its rediscovery in 1911.

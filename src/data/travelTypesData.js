@@ -147,7 +147,7 @@ const travelTypesData = [
         {
           name: 'Japan Cultural Immersion',
           description: 'Experience tea ceremonies, meditative gardens, traditional arts, and spiritual traditions across Japan.',
-          image: 'https://i.ibb.co/LDpqyFwT/Japan.webp'
+          image: 'https://i.ibb.co/xK3zYXNv/Kyoto.jpg'
         },
         {
           name: 'Bhutan: Land of the Thunder Dragon',
