@@ -290,43 +290,43 @@ const LuxuryCruiseJourneyPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/3TBrDP1/Cruise-Suite.jpg" 
+                      src="https://i.ibb.co/rK4rZrtd/Cruise4.jpg" 
                       alt="Luxury Suite" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/Jk5Z1MT/Cruise-Dining.jpg" 
+                      src="https://i.ibb.co/jPnW2FYV/Cruise3.jpg" 
                       alt="Fine Dining" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/WFGZ97K/Cruise-Pool.jpg" 
+                      src="https://i.ibb.co/v62JNv7G/Cruise1.jpg" 
                       alt="Infinity Pool" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/B2DtkNb/Phang-Nga.jpg" 
-                      alt="Phang Nga Bay" 
+                      src="https://i.ibb.co/rGNXXdjB/Cruise2.jpg" 
+                      alt="Sea View" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/s3P7vJr/Cruise-Spa.jpg" 
+                      src="https://i.ibb.co/yvYnctB/Cruise7.jpg" 
                       alt="Luxury Spa" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/R7Xsn0j/Langkawi.jpg" 
-                      alt="Langkawi SkyBridge" 
+                      src="https://i.ibb.co/ZRjjJZkf/Cruise5.webp" 
+                      alt="Luxury Room" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>

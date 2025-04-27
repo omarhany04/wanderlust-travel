@@ -299,43 +299,43 @@ const CoastalCaliforniaHelicopterPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/B384rzT/Helicopter-Interior.jpg" 
-                      alt="Luxury Helicopter Interior" 
+                      src="https://i.ibb.co/cS40sWKj/Helicopter.jpg" 
+                      alt="Helicopter Interior" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/fkGKN6V/San-Diego-Skyline.jpg" 
+                      src="https://i.ibb.co/ccQPpJmk/SanDiego.jpg" 
                       alt="San Diego Skyline Aerial View" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/vH3vDrN/La-Jolla-Cove.jpg" 
-                      alt="La Jolla Cove From Above" 
+                      src="https://i.ibb.co/DmRnJYD/Camera.jpg" 
+                      alt="Camera Ready" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/VSSgR2P/Torrey-Pines.jpg" 
+                      src="https://i.ibb.co/FbYVt7Pk/Torrey.jpg" 
                       alt="Torrey Pines Reserve" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/6vqvKPK/Champagne-Break.jpg" 
-                      alt="Champagne Break at Scenic Overlook" 
+                      src="https://i.ibb.co/YTfd0Scz/La-Colla-Cove.jpg" 
+                      alt="La Jolla Cove" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
-                      src="https://i.ibb.co/pfqLJBC/Coastal-Cliffs.jpg" 
-                      alt="Dramatic Coastal Cliffs" 
+                      src="https://i.ibb.co/WNMH27z2/Food.jpg" 
+                      alt="Food and Champagne" 
                       className="w-full h-full object-cover transform hover:scale-105 transition duration-300"
                     />
                   </div>
