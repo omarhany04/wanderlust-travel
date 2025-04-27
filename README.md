@@ -128,7 +128,7 @@ Wanderlust is a modern, responsive travel website built with React and Tailwind 
 - **Testimonials**: Customer reviews with a slider interface
 - **Newsletter**: Email signup for travel updates and promotions
 
-## 💡 Features to Add
+## 💡 Features to be added
 
 - User authentication and profiles
 - Payment integration
@@ -137,11 +137,3 @@ Wanderlust is a modern, responsive travel website built with React and Tailwind 
 - Interactive maps for destinations
 - Blog/travel guides section
 - Multi-language support
-
-## 📷 Screenshots
-
-(Place your screenshots here)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
