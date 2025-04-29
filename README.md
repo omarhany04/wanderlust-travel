@@ -52,59 +52,65 @@ Wanderlust is a modern, responsive travel website built with React and Tailwind 
 ## 📂 Project Structure
 
 ```
-/src
-  /assets
-    /styles
-      animations.css
-      globals.css
-    /images
-      /* Images imported from URLs */
-  
-  /components
-    /layout
-      Header.jsx
-      Footer.jsx
-      Layout.jsx
-    /common
-      Button.jsx
-      DestinationCard.jsx
-      ReservationModal.jsx
-      GlobalSearch.jsx
-    /sections
-      Hero.jsx
-      SearchBar.jsx
-      Destinations.jsx
-      Featured.jsx
-      WhyChooseUs.jsx
-      Testimonials.jsx
-      Newsletter.jsx
- 
+Directory structure:
+└── omarhany04-wanderlust-travel/
+    ├── README.md
+    ├── package.json
+    ├── public/
+    │   ├── index.html
+    │   ├── manifest.json
+    │   └── robots.txt
+    └── src/
+        ├── App.css
+        ├── App.js
+        ├── App.test.js
+        ├── index.css
+        ├── index.js
+        ├── reportWebVitals.js
+        ├── setupTests.js
+        ├── assets/
+        │   └── styles/
+        │       ├── animations.css
+        │       └── globals.css
+        ├── components/
+        │   ├── common/
+        │   │   ├── Button.jsx
+        │   │   ├── DestinationCard.jsx
+        │   │   ├── GlobalSearch.jsx
+        │   │   └── ReservationModal.jsx
+        │   ├── layout/
+        │   │   ├── Footer.jsx
+        │   │   ├── Header.jsx
+        │   │   └── Layout.jsx
+        │   └── sections/
+        │       ├── Destinations.jsx
+        │       ├── Featured.jsx
+        │       ├── Hero.jsx
+        │       ├── Newsletter.jsx
+        │       ├── SearchBar.jsx
+        │       ├── Testimonials.jsx
+        │       └── WhyChooseUs.jsx
+        ├── data/
+        │   ├── destinationsData.js
+        │   └── travelTypesData.js
+        ├── hooks/
+        │   └── useScrollPosition.js
+        ├── pages/
+        │   ├── AboutPage.jsx
+        │   ├── CoastalCaliforniaHelicopterPage.jsx
+        │   ├── ContactPage.jsx
+        │   ├── DestinationDetail.jsx
+        │   ├── DestinationsPage.jsx
+        │   ├── Home.jsx
+        │   ├── IslandHoppingTourPage.jsx
+        │   ├── LuxuryCruiseJourneyPage.jsx
+        │   ├── SearchResultsPage.jsx
+        │   ├── TravelExperienceDetail.jsx
+        │   ├── TravelTypePage.jsx
+        │   └── WineCountryBalloonPage.jsx
+        └── utils/
+            └── animations.js
 
-  /data
-      destinationsData.js
-      travelTypesData.js
-   
-  /pages
-    Home.jsx
-    DestinationDetail.jsx
-    DestinationsPage.jsx
-    AboutPage.jsx
-    ContactPage.jsx
-    TravelTypePage.jsx
-    TravelExperienceDetail.jsx
-    IslandHoppingTourPage.jsx
-    SearchResultsPage.jsx
-  
-  /hooks
-    useScrollPosition.js
-  
-  /utils
-    animations.js
-  
-  App.jsx
-  index.jsx
-  index.css
-  tailwind.config.js
 ```
 
 ## 📱 Pages
