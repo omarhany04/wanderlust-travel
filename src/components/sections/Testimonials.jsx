@@ -131,7 +131,7 @@ const Testimonials = () => {
         </div>
         
         <div 
-          className="relative" 
+          className="relative overflow-hidden" 
           id="testimonial-container"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -145,7 +145,7 @@ const Testimonials = () => {
             ref={sliderRef}
           >
             {testimonialData.map(testimonial => (
-              <div key={testimonial.id} className="min-w-full px-4">
+              <div key={testimonial.id} className="min-w-full px-4 px-4 w-full box-border">
                 <TestimonialCard 
                   name={testimonial.name}
                   trip={testimonial.trip}
