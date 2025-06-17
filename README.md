@@ -1,6 +1,7 @@
 # Wanderlust Travel Website
 
 ![Wanderlust Travel](https://i.ibb.co/dwLxwT3L/Background.jpg)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-blue?style=for-the-badge)](https://wanderlust-travel-one.vercel.app/)
 
 ## 📝 Description
 
@@ -30,7 +31,7 @@ Wanderlust is a modern, responsive travel website built with React and Tailwind 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/wanderlust-travel.git
+   git clone https://github.com/omarhany04/wanderlust-travel.git
    cd wanderlust-travel
    ```
 
